@@ -1,29 +1,35 @@
-let salida = document.getElementById("salida");
-salida.innerHTML = `<div class="hola-js">Hola</div><br><br>`;
+let salidafor = document.getElementById("salidafor");
+salidafor.innerHTML = `<br>`;
 const frutas = ["manzana", "pera", "kiwi", "platano"];
 
-
 for(let i = 0; i < frutas.length; i++) {
-    salida.innerHTML += frutas[i] +  "<br>";
+    salidafor.innerHTML += i+": "+frutas[i] +  "<br>";
 
 console.log(frutas[i]);
 }
+
+//ejemplo de for of
 const colores = ["verde", "rojo", "blanco", "azul"];
-salida.innerHTML += "<br>Colores<br>";
+let salidaforof = document.getElementById("salidaforof");
+salidaforof.innerHTML += "<br>Colores<br>";
 for(let color of colores) {
-    salida.innerHTML += color + "<br>"
+    salidaforof.innerHTML += color+ "<br>"
     console.log(color);
     
 }
+
+//ejemplo for in
 const persona = {
-    nombre: "Juan",
-    edad: 35,
+    nombre: "Jose",
+    edad: 120,
     direccion: "Bilbao"
 };
-salida.innerHTML += "<br>Persona<br>"
+let salidaforin = document.getElementById("salidaforin")
+
+salidaforin.innerHTML += "<br>Persona<br>"
 for (let clave in persona) {
-    const linea = clave + ":" + persona[clave];
-    salida.innerHTML += linea + "<br>"
+    const linea = clave + ": " + persona[clave];
+    salidaforin.innerHTML += linea + "<br>"
     console.log(linea);
 }
 for (let i = 0; i <= 9; i++) {
@@ -31,12 +37,14 @@ for (let i = 0; i <= 9; i++) {
         continue;
     }
     console.log(i);
-    salida.innerHTML += i +"<br>";
+    let salidacontinue = document.getElementById("salidacontinue");
+    salidacontinue.innerHTML += i +"<br>";
 }
 for (let i = 0; i <= 9; i++) {
     if (i === 6) {
         break;
     }
     console.log(i);
-    salida.innerHTML += i +"<br>";
+    let salidabreack = document.getElementById("salidabreack");
+    salidabreack.innerHTML += i +"<br>";
 }

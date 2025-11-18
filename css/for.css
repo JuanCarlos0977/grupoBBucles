@@ -1,31 +1,44 @@
 body {
-    background-color: aqua;
+    background-color: #b9a9ff;
 }
-.hola-js {
-    font-size: 40px;
-    text-align: left;
+
+.titulo-pagina {
+    text-align: center;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 30px;
-    color: #003344;
+    color: black;
+
 }
 .titulo-for {
     text-align: left;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     margin-top: 30px;
     color: #003344;
 }
 .titulo-forof {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     margin-top: 30px;
     color: #003344;
 }
 .titulo-forin {
     text-align: right;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     margin-top: 30px;
     color: #003344;
+}
+.padre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.div-ejemplo {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
 }
