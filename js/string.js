@@ -52,3 +52,19 @@
       }
     }
 
+    //4. EJEMPLOS SPLIT Y JOIN //
+
+        function procesarTexto() {
+      // 1. Tomar el texto del input
+      const texto = document.getElementById("inputTexto").value.trim();
+
+      // 2. Usar split() para convertir el texto en un array de palabras
+      const listaPalabras = texto.split(" "); // separa por espacios
+      document.getElementById("lista").textContent = 
+        "Array de palabras: [" + listaPalabras.join(", ") + "]";
+
+      // 3. Usar join() para unir las palabras con guiones
+      const textoUnido = listaPalabras.join("-");
+      document.getElementById("textoUnido").textContent = 
+        "Texto unido con guiones: " + textoUnido;
+    }
