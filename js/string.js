@@ -33,3 +33,22 @@
       pChar.textContent = `Carácter en el índice ${i}: "${c}"`;
 });
 
+//3. EJEMPLO INDEF-OF //
+
+    // Lista de frutas
+    const frutas = ["manzana", "banana", "cereza", "durazno", "naranja", "piña", "kiwi"];
+
+    // Función para buscar fruta usando indexOf
+    function buscarFruta() {
+      const fruta = document.getElementById("frutaInput").value.trim();
+      const posicion = frutas.indexOf(fruta);
+
+      const resultado = document.getElementById("resultado");
+
+      if (posicion !== -1) {
+        resultado.textContent = `La fruta "${fruta}" está en la posición ${posicion}.`;
+      } else {
+        resultado.textContent = `La fruta "${fruta}" no se encuentra en la lista.`;
+      }
+    }
+

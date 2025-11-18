@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      
+      * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+    </style>
 </head>
 <body>
 
+<h2>EJEMPLOS DE MÉTODOS DE CADENA</h2>
+<br>
 
 <div id="slice">
- <h2>Ejemplo 1: Usando Slice en un string</h2>
+ <h3>Ejemplo 1: Usando Slice en un string</h3>
 
   <p id="texto1original"></p>
   <button id="cortarPalabra">Cortar palabra "Hola"</button>
@@ -20,7 +33,7 @@
 
 <div id="char-at">
 
-  <h2>Ejemplo 2: Usando charAt() en un string</h2>
+  <h3>Ejemplo 2: Usando charAt() en un string</h3>
 
   <p id="texto2original"></p>
   <input type="number" id="indice" placeholder="Ingresa un índice" />
@@ -28,6 +41,20 @@
   <p id="caracter"></p>
 
 </div>
+
+<div>
+
+  <h3>Ejemplo 3: Buscar fruta en la lista, usando indefOf()</h3>
+
+  <p>Escribe el nombre de la fruta y presiona "Buscar":</p>
+  <input type="text" id="frutaInput" placeholder="Ejemplo: banana">
+  <button onclick="buscarFruta()">Buscar</button>
+
+  <p id="resultado"></p>
+
+</div>
+
+
 
   <script src="/js/string.js">
     </script>
