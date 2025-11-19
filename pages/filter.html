@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter js</title>
+    <link rel="stylesheet" href="../css/map.css">
+</head>
+<body>
+    <main class="padre">
+        <h1>Ejemplo con Filter</h1>
+        <h2>con funcion flecha</h2>
+        <pre class="codeConsole">
+            <code>
+            const numbers = [1, 2, 3, 4, 5];
+            const major = numbers.filter(num => num > 3);
+            console.log(major);
+
+            const words = ["spray", "elite", "exuberant", "destruction", "present"];
+            const longWords = words.filter((word) => word.length > 6);
+
+            console.log(longWords);
+            </code>
+        </pre>
+        <div id="salida"></div>
+
+        <h2>con funcion tradicional</h2>
+        <pre class="codeConsole">
+            <code>
+            function checkAdult(age) {
+                return age >= 18;
+            }
+
+            const ages = [32, 33, 16, 40];
+
+            const filterAdults = ages.filter(checkAdult);
+            
+            console.log(filterAdults);
+            </code>
+        </pre>
+        <div id="salida2"></div>
+        
+    </main>
+
+    <script src="../js/filter.js"></script>
+</body>
+</html>
