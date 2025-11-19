@@ -33,7 +33,7 @@
       pChar.textContent = `Carácter en el índice ${i}: "${c}"`;
 });
 
-//3. EJEMPLO INDEF-OF //
+//3. EJEMPLO INDEX-OF //
 
     // Lista de frutas
     const frutas = ["manzana", "banana", "cereza", "durazno", "naranja", "piña", "kiwi"];
