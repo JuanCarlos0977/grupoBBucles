@@ -1,0 +1,22 @@
+      
+      
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 5rem;
+        background-color: #bcc5dc;
+      }
+
+      section {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 1rem;
+        padding: 2rem;
+        padding-top: 1.5rem;
+        max-width: 40rem;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
