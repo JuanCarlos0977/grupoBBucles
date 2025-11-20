@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Parse js</title>
+    <link rel="stylesheet" href="../css/map.css">
+</head>
+<body>
+    <main class="padre">
+        <h1>Ejemplo con JSON.parse()</h1>
+        <h2>pasando un objeto solamente</h2>
+        <pre class="codeConsole">
+            <code>
+            //pasando un objeto solamente
+            var foo = {
+                foundation: "Mozilla",
+                model: "box",
+                week: 45,
+                transport: "car",
+                month: 7,
+            };
+            var jsonString = JSON.stringify(foo);
+
+            console.log(jsonString); 
+            </code>
+        </pre>
+        <div id="salida">
+            <p>Los resultados de este ejemplo se pueden apreciar mejor en la consola del navegador</p>
+        </div>
+
+        <h2>Usando el parámetro reviver</h2>
+        <pre class="codeConsole">
+            <code>
+            const myJson2= `{
+                "p": 5,
+                "x": 10,
+                "y": 20,
+                "z": 30
+            }`
+
+            let obj2 = JSON.parse(myJson2, (clave, valor) => {
+                if (clave === "z") return valor * 2;
+                return valor;
+            });
+
+            console.log(obj2);
+            </code>
+        </pre>
+        <div id="salida2">
+            <p>Los resultados de este ejemplo se pueden apreciar mejor en la consola del navegador</p>
+        </div>
+
+    </main>
+
+    <script src="../js/jsonParse.js"></script>
+</body>
+</html>
