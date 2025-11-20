@@ -15,9 +15,9 @@ console.log(letters4);
 console.log(letters5);
 
 // Acceder a los elementos del array mediante su índice
-console.log(letters3[0]); // "a"
-console.log(letters3[1]); // "b"
-console.log(letters3[2]); // "c"
+console.log(letters3[1]); // "a"
+console.log(letters3[2]); // "b"
+console.log(letters3[0]); // "c"
 
 console.log(`${letters3[0]} , ${letters3[1]} - ${letters3[2]}`);
 
