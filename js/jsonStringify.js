@@ -66,3 +66,17 @@ console.log(jsonString5);
     "commits": 200
 }
 */
+
+//// para imprimir en el navegador
+const divSalida1 = document.querySelector("#salida")
+const divSalida2 = document.querySelector("#salida2")
+const divSalida3 = document.querySelector("#salida3")
+const divSalida4 = document.querySelector("#salida4")
+
+divSalida1.innerHTML = `<p class="text-json">${jsonString}</p>`
+divSalida2.innerHTML = `<p class="text-json">${jsonString2}</p>`
+divSalida3.innerHTML = `<p class="text-json">${jsonString3}</p>`
+divSalida4.innerHTML = `<div>
+                        <pre class="codeConsole"><code>${jsonString4}</code></pre>
+                        <pre class="codeConsole"><code>${jsonString5}</code></pre>
+                        </div>`
