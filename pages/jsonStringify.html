@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Stringify js</title>
+    <link rel="stylesheet" href="../css/map.css">
+</head>
+<body>
+    <main class="padre">
+        <h1>Ejemplo con JSON.stringify()</h1>
+        <h2>pasando un objeto solamente</h2>
+        <pre class="codeConsole">
+            <code>
+            //pasando un objeto solamente
+            var foo = {
+                foundation: "Mozilla",
+                model: "box",
+                week: 45,
+                transport: "car",
+                month: 7,
+            };
+            var jsonString = JSON.stringify(foo);
+
+            console.log(jsonString); 
+            </code>
+        </pre>
+        <div id="salida"></div>
+
+        <h2>Usando una funcion para el parametro replacer</h2>
+        <pre class="codeConsole">
+            <code>
+            function replacer(key, value) {
+                // Filtrando propiedades
+                return typeof value === "string" ? undefined : value
+
+            }
+
+            var objectJs2 = {
+                name: "jon",
+                skill: "javaScript",
+                task: 30,
+                edad: "21",
+                projects: 3,
+                commits: 200
+            };
+            var jsonString2 = JSON.stringify(objectJs2, replacer);
+            console.log(jsonString2);
+            </code>
+        </pre>
+        <div id="salida2"></div>
+
+        <h2>Usando un Array como el parametro replacer</h2>
+        <pre class="codeConsole">
+            <code>
+            let jsonString3 = JSON.stringify(objectJs2, ["name", "skill", "age"]);
+            console.log(jsonString3);
+            </code>
+        </pre>
+        <div id="salida3"></div>
+        
+        <h2>Usando argumento space</h2>
+        <pre class="codeConsole">
+            <code>
+            let jsonString4 = JSON.stringify(objectJs2, null, " ");
+            console.log(jsonString4);
+
+            //Usar el carácter tabulador simula la apariencia de impresión:
+            let jsonString5 = JSON.stringify(objectJs2, null, "\t");
+            console.log(jsonString5);
+            </code>
+        </pre>
+        <div id="salida4"></div> 
+    </main>
+
+    <script src="../js/jsonStringify.js"></script>
+</body>
+</html>
