@@ -21,9 +21,9 @@ console.log(letters3[2]); // "c"
 
 console.log(`${letters3[0]} , ${letters3[1]} - ${letters3[2]}`);
 
-const salida = document.getElementById("salida");
+const divSalida1 = document.getElementById("salida1");
 
-salida.innerHTML = `
+divSalida1.innerHTML = `
 
-<h1>hola esto es un ejemplo array</h1><p>${letters3[0]} , ${letters3[1]} - ${letters3[2]}</p>
+<h2>hola esto es un ejemplo array</h2><p>${letters3[0]} , ${letters3[1]} - ${letters3[2]}</p>
 `;
