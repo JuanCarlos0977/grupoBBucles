@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 5rem;
+        background-color: #bcc5dc;
+      }
+
+      section {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 1rem;
+        padding: 2rem;
+        padding-top: 1.5rem;
+        max-width: 40rem;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+    </style>
+</head>
+<body>
+
+<section>
+<h2>EJEMPLOS DE MÉTODOS DE CADENA</h2>
+<br>
+
+<div id="slice">
+ <h3>Ejemplo 1: Usando Slice en un string</h3>
+
+  <p id="texto1original"></p>
+  <button id="cortarPalabra">Cortar palabra "Hola"</button>
+  <p id="texto1cortado"></p>
+
+</div>
+<br>
+
+<div id="char-at">
+
+  <h3>Ejemplo 2: Usando charAt() en un string</h3>
+
+  <p id="texto2original"></p>
+  <input type="number" id="indice" placeholder="Ingresa un índice" />
+  <button id="mostrarChar">Mostrar carácter</button>
+  <p id="caracter"></p>
+
+</div>
+<br>
+<div>
+
+  <h3>Ejemplo 3: Buscar fruta en la lista, usando indexOf()</h3>
+
+  <p>Escribe el nombre de la fruta y presiona "Buscar":</p>
+  <input type="text" id="frutaInput" placeholder="Ejemplo: banana">
+  <button onclick="buscarFruta()">Buscar</button>
+
+  <p id="resultado"></p>
+
+</div>
+</section>
+
+<section>
+<h2>EJEMPLOS DE MÉTODOS DE ARRAYS Y OBJETOS</h2>
+<br>
+
+  <h3>Ejemplo 4: Métodos de conversión <br>[convertir texto en lista y volver a texto con split() y join() ]</h3>
+
+  <p>Escribe una frase:</p>
+  <input type="text" id="inputTexto" placeholder="Ej: Hola mundo desde JS">
+  <button onclick="procesarTexto()">Procesar</button>
+
+  <h3>Resultados:</h3>
+  <p id="lista"></p>
+  <p id="textoUnido"></p>
+</section>
+
+  <script src="/js/string.js">
+    </script>
+
+</body>
+</html>
