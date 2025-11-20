@@ -35,12 +35,20 @@
 <h2>EJEMPLOS DE MÉTODOS DE CADENA</h2>
 <br>
 
-<div id="slice">
- <h3>Ejemplo 1: Usando Slice en un string</h3>
+<div id="slice-substr">
+ <h3>Ejemplo 1: Usando Slice y Substring en un string</h3>
 
   <p id="texto1original"></p>
-  <button id="cortarPalabra">Cortar palabra "Hola"</button>
-  <p id="texto1cortado"></p>
+  <button id="cortarPalabraSlice">Cortar palabra "Hola" con slice</button>
+  <p id="texto1cortadoSlice"></p>
+
+  <p id="texto1original"></p>
+  <button id="cortarPalabraSubstring">Cortar palabra "Hola" con substring</button>
+  <p id="texto1cortadoSubstring"></p>
+
+  <h4>Diferencia importante: índices negativos</h4>
+  <button id="botonNegativos">Probar slice(-5) vs substring(-5)</button>
+  <p id="resultadoNegativos"></p>
 
 </div>
 <br>
