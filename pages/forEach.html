@@ -4,14 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/forEach.css">
+    <link rel="stylesheet" href="../css/map.css">
 </head>
 <body>
     <main class="padre">
         <h1>Ejemplo con forEach</h1>
         <h2>con funcion flecha</h2>
+        <pre class="codeConsole">
+            <code>
+            const divSalida = document.querySelector("#salida")
+            let salidaHtml = ``
+            const myArray1 = ["elemento a", "elemento b", "elemento c"]
+
+            myArray1.forEach((element, index) => {
+                salidaHtml += `&lt;/p&gt;myArray1[${index}] : "${element}"&lt;/p&gt;`
+                console.log(`myArray1[${index}] =  ${element}`)
+            })
+            //imprimir en el div el resultado procesado por el foreach
+            divSalida.innerHTML = salidaHtml 
+            </code>
+        </pre>
         <div id="salida"></div>
         <h2>con funcion tradicional</h2>
+        <pre class="codeConsole">
+            <code>
+            const divSalida2 = document.querySelector("#salida2")
+            let salidaHtml2 = ``
+
+            function logArrayElements(element, index, myArray2) {
+                salidaHtml2 += `&lt;p&gt;myArray2[${index}] : "${element}"&lt;/p&gt;`
+                console.log(`myArray2[${index}] =  ${element} `)
+            }
+            const myArray2 = [2,5,,9]
+
+            myArray2.forEach(logArrayElements)
+
+            divSalida2.innerHTML=salidaHtml2
+            </code>
+        </pre>
         <div id="salida2"></div>    
     </main>
 
