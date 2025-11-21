@@ -3,6 +3,7 @@
 // 1. EJEMPLO SLICE Y SUBSTRING //
   
   const texto1 = "Hola equipo, este es un ejemplo.";
+  
     const pOriginal1 = document.getElementById("texto1original");
     
     const pCortadoSlice = document.getElementById("texto1cortadoSlice");
@@ -22,18 +23,26 @@
     btnSlice.addEventListener("click", () => {
       const cortado = texto1.slice(0, 4); // "Hola"
       pCortadoSlice.textContent = "Texto cortado con slice: " + cortado;
+      console.log("Texto cortado con slice: " + cortado);
+      
     });
 
     // Usar Slice
     btnSubstring.addEventListener("click", () => {
       const cortado = texto1.substring(0, 4); // "Hola"
       pCortadoSubstring.textContent = "Texto cortado con substring: " + cortado;
+      console.log("Texto cortado con substring: " + cortado);
+      
     });
 
     // Comprobar diferencia con negativos
     btnNegativos.addEventListener("click", () => {
       const conSlice = texto1.slice(-5);      // Toma los últimos 5 caracteres
       const conSubstring = texto1.substring(-5); // -5 se convierte en 0
+      console.log(conSlice);
+      console.log(conSubstring);
+      
+      
 
   pNegativos.innerHTML = `
       <strong>slice(-5):</strong> ${conSlice} <br>
