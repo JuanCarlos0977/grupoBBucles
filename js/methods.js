@@ -1,21 +1,53 @@
 
 
-// 1. EJEMPLO SLICE //
+// 1. EJEMPLO SLICE Y SUBSTRING //
   
   const texto1 = "Hola equipo, este es un ejemplo.";
+  
     const pOriginal1 = document.getElementById("texto1original");
-    const pCortado1 = document.getElementById("texto1cortado");
-    const btn1 = document.getElementById("cortarPalabra");
+    
+    const pCortadoSlice = document.getElementById("texto1cortadoSlice");
+    const btnSlice = document.getElementById("cortarPalabraSlice");
+
+    const pCortadoSubstring = document.getElementById("texto1cortadoSubstring");
+    const btnSubstring = document.getElementById("cortarPalabraSubstring");
+
+    const btnNegativos = document.getElementById("botonNegativos");
+    const pNegativos = document.getElementById("resultadoNegativos");
+
 
     // Mostrar el texto original
     pOriginal1.textContent = "Texto original: " + texto1;
 
-    btn1.addEventListener("click", () => {
-      // Usamos slice para tomar solo los primeros 4 caracteres
+    // Usar Slice
+    btnSlice.addEventListener("click", () => {
       const cortado = texto1.slice(0, 4); // "Hola"
-      pCortado1.textContent = "Texto cortado con slice: " + cortado;
+      pCortadoSlice.textContent = "Texto cortado con slice: " + cortado;
+      console.log("Texto cortado con slice: " + cortado);
+      
     });
 
+    // Usar Slice
+    btnSubstring.addEventListener("click", () => {
+      const cortado = texto1.substring(0, 4); // "Hola"
+      pCortadoSubstring.textContent = "Texto cortado con substring: " + cortado;
+      console.log("Texto cortado con substring: " + cortado);
+      
+    });
+
+    // Comprobar diferencia con negativos
+    btnNegativos.addEventListener("click", () => {
+      const conSlice = texto1.slice(-5);      // Toma los últimos 5 caracteres
+      const conSubstring = texto1.substring(-5); // -5 se convierte en 0
+      console.log(conSlice);
+      console.log(conSubstring);
+      
+      
+
+  pNegativos.innerHTML = `
+      <strong>slice(-5):</strong> ${conSlice} <br>
+      <strong>substring(-5):</strong> ${conSubstring}`;
+      });
 
 //2. EJEMPLO CHAR-AT //
 

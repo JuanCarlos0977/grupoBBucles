@@ -4,30 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      
-      body {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 5rem;
-        background-color: #bcc5dc;
-      }
-
-      section {
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 1rem;
-        padding: 2rem;
-        padding-top: 1.5rem;
-        max-width: 40rem;
-      }
-
-      h3 {
-        font-size: 1.3rem;
-      }
-
-    </style>
+    <link rel="stylesheet" href="/css/methods.css">
 </head>
 <body>
 
@@ -35,19 +12,27 @@
 <h2>EJEMPLOS DE MÉTODOS DE CADENA</h2>
 <br>
 
-<div id="slice">
- <h3>Ejemplo 1: Usando Slice en un string</h3>
+<div id="slice-substr">
+ <h3>Ejemplo 1: Usar Slice y Substring en un string</h3>
 
   <p id="texto1original"></p>
-  <button id="cortarPalabra">Cortar palabra "Hola"</button>
-  <p id="texto1cortado"></p>
+  
+  <button id="cortarPalabraSlice">Cortar palabra con slice</button>
+  <p id="texto1cortadoSlice"></p>
+
+  <button id="cortarPalabraSubstring">Cortar palabra con substring</button>
+  <p id="texto1cortadoSubstring"></p>
+
+  <h4>Diferencia entre ambos métodos: índices negativos</h4>
+  <button id="botonNegativos">Probar slice(-5) vs substring(-5)</button>
+  <p id="resultadoNegativos"></p>
 
 </div>
 <br>
 
 <div id="char-at">
 
-  <h3>Ejemplo 2: Usando charAt() en un string</h3>
+  <h3>Ejemplo 2: Usar charAt() en un string</h3>
 
   <p id="texto2original"></p>
   <input type="number" id="indice" placeholder="Ingresa un índice" />
@@ -84,7 +69,7 @@
   <p id="textoUnido"></p>
 </section>
 
-  <script src="/js/string.js">
+  <script src="/js/methods.js">
     </script>
 
 </body>
