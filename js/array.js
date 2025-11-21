@@ -39,6 +39,8 @@ divSalida1.innerHTML = `
 
 // 2 Strings:
 
+console.log("Ejemplos de Strings")
+
 const string1 = "Una cadena primitiva";
 const string2 = "También una cadena primitiva";
 const string3 = `Otra cadena primitiva más`;
@@ -129,7 +131,7 @@ console.log(miSet.has(7)); // false
 
 
 // 4. Eliminar un elemento
-miSet.delete(2);
+miSet.delete(2); // ¿? miSet.delete([1])
 // miSet ahora contiene: {1, 3, 4, 5, 6}
 
 // 5. Obtener el tamaño
@@ -152,3 +154,30 @@ divSalida4.innerHTML = `<p>Array inicial: ${miArray}</p>
                         <p>Con set quitamos duplicados: ${nuevoArray1}</p>
                         <p>Añadimos un elemento: ${nuevoArray2}</p>
                         <p>Quitamos el 2º elemento: ${nuevoArray3}`;
+
+
+
+// SCOPE
+
+// Variable global
+
+let variableGlobal1 = "Soy global";
+
+function miFuncion() {
+  console.log(variableGlobal1); // Funciona
+}
+miFuncion();
+console.log(variableGlobal1); // Funciona
+
+
+// Variable local
+
+function otraFuncion() {
+  let variableLocal2 = "Soy local";
+  console.log(variableLocal2); // Funciona
+}
+otraFuncion();
+// console.log(variableLocal2); // Esto daría un error: ReferenceError
+
+
+
