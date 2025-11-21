@@ -70,12 +70,31 @@ console.log("Sacamos en consola una consulta del objeto")
 console.log(persona.nombre); // "Ana"
 console.log(persona["edad"]); // 30
 
+
+//Array de objetos
+
+let estudiantes = [
+  { nombre: "Carlos", edad: 30 },
+  { nombre: "Maria", edad: 29 },
+  { nombre: "Juan", edad: 28 }
+];
+
+console.log("array de objetos")
+
+console.log(estudiantes[0].nombre); // "Carlos"
+console.log(estudiantes[1]["edad"]); // 29
+
+
 const divSalida3 = document.getElementById("salida3");
 
 divSalida3.innerHTML = `<p>De la persona </p>
                         <p>El nombbre es:${persona.nombre}</p>
                         <p> la edad es: ${persona.edad}</p>
                         <p>La profesión es: ${persona.profesion}`;
+
+
+
+
 
 
 // 4 Set
