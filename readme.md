@@ -175,12 +175,13 @@ JSON.stringify({ a: 1 });
 Este README funciona como base para el proyecto grupal: cada miembro puede añadir ejemplos ampliados, diagramas o ejercicios para profundizar en los temas.
 
 
-Profesor: Andres Osina https://github.com/andres63teacher
+### Profesor: 
+- Andres Osina https://github.com/andres63teacher
 
-Dev's:
+### Dev's:
 
-Ramiro Navas: https://github.com/ramironavas
-Juan Carlos:  https://github.com/JuanCarlos0977
-Anna Nikolenko: https://github.com/ganna1977
-Yoandres La Cruz: https://github.com/ylcruzdev
+- Ramiro Navas: https://github.com/ramironavas
+- Juan Carlos:  https://github.com/JuanCarlos0977
+- Anna Nikolenko: https://github.com/ganna1977
+- Yoandres La Cruz: https://github.com/ylcruzdev
 
