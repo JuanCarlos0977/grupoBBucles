@@ -16,29 +16,29 @@
     const pNegativos = document.getElementById("resultadoNegativos");
 
 
-    // Mostrar el texto original
+    // mostrar el texto original:
     pOriginal1.textContent = "Texto original: " + texto1;
 
-    // Usar Slice
+    // usar Slice:
     btnSlice.addEventListener("click", () => {
-      const cortado = texto1.slice(0, 4); // "Hola"
+      const cortado = texto1.slice(0, 4); // "Hola"  ***
       pCortadoSlice.textContent = "Texto cortado con slice: " + cortado;
       console.log("Texto cortado con slice: " + cortado);
       
     });
 
-    // Usar Slice
+    // usar Substring:
     btnSubstring.addEventListener("click", () => {
-      const cortado = texto1.substring(0, 4); // "Hola"
+      const cortado = texto1.substring(0, 4); // "Hola"  ***
       pCortadoSubstring.textContent = "Texto cortado con substring: " + cortado;
       console.log("Texto cortado con substring: " + cortado);
       
     });
 
-    // Comprobar diferencia con negativos
+    // comprobar diferencia con negativos
     btnNegativos.addEventListener("click", () => {
-      const conSlice = texto1.slice(-5);      // Toma los últimos 5 caracteres
-      const conSubstring = texto1.substring(-5); // -5 se convierte en 0
+      const conSlice = texto1.slice(-5);      // Toma los últimos 5 caracteres  ***
+      const conSubstring = texto1.substring(-5); // -5 se convierte en 0   ***
       console.log(conSlice);
       console.log(conSubstring);
       
@@ -60,17 +60,17 @@
     pOriginal2.textContent = "Texto original: " + texto2;
 
     btn2.addEventListener("click", () => {
-      const i = parseInt(input.value); // convertir valor ingresado a número
+      const i = parseInt(input.value); // convertir valor ingresado (en string) a número
       const c = texto2.charAt(i);
       pChar.textContent = `Carácter en el índice ${i}: "${c}"`;
 });
 
 //3. EJEMPLO INDEX-OF //
 
-    // Lista de frutas
+    // lista de frutas
     const frutas = ["manzana", "banana", "cereza", "durazno", "naranja", "piña", "kiwi"];
 
-    // Función para buscar fruta usando indexOf
+    // función para buscar fruta usando indexOf
     function buscarFruta() {
       const fruta = document.getElementById("frutaInput").value.trim();
       const posicion = frutas.indexOf(fruta);
@@ -87,15 +87,15 @@
     //4. EJEMPLOS SPLIT Y JOIN //
 
         function procesarTexto() {
-      // 1. Tomar el texto del input
+      // 1. tomar el texto del input
       const texto = document.getElementById("inputTexto").value.trim();
 
-      // 2. Usar split() para convertir el texto en un array de palabras
+      // 2. usar split() para convertir el texto en un array de palabras
       const listaPalabras = texto.split(" "); // separa por espacios
       document.getElementById("lista").textContent = 
         "Array de palabras: [" + listaPalabras.join(", ") + "]";
 
-      // 3. Usar join() para unir las palabras con guiones
+      // 3. usar join() para unir las palabras con guiones
       const textoUnido = listaPalabras.join("-");
       document.getElementById("textoUnido").textContent = 
         "Texto unido con guiones: " + textoUnido;
