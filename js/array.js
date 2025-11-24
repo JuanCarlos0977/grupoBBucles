@@ -177,7 +177,7 @@ function otraFuncion() {
   console.log(variableLocal2); // Funciona
 }
 otraFuncion();
-// console.log(variableLocal2); // Esto daría un error: ReferenceError
+//console.log(variableLocal2); // Esto daría un error: ReferenceError
 
 
 

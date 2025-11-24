@@ -27,6 +27,19 @@ const persona = {
 let salidaforin = document.getElementById("salidaforin")
 
 salidaforin.innerHTML += "<br>Persona<br>"
+let input=1
+const arr =["manzana", "pera", "mango"]
+for (let i in arr) {
+
+    if (i == input) {
+        console.log("esto es lp que encontre:" + arr[i]);
+    }
+    else
+    {
+        console.log("no existe el indice");
+    }
+}
+
 for (let clave in persona) {
     const linea = clave + ": " + persona[clave];
     salidaforin.innerHTML += linea + "<br>"
